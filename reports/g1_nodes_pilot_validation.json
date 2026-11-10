@@ -1,0 +1,48 @@
+{
+  "pilot_complete": 20,
+  "pilot_categories": 20,
+  "max_orthogonality_error": 5.381444067253938e-06,
+  "max_determinant_error": 6.6163995713353074e-06,
+  "reference_comparisons": [
+    {
+      "source": "g1/csv/210531/jump_and_land_heavy_001__A001.csv",
+      "category": "Advanced Locomotion",
+      "max_abs_errors": {
+        "posed_joints": 5.953668447133964e-08,
+        "global_rot_mats": 2.9801448642174933e-08,
+        "local_rot_mats": 2.9801206724577867e-08,
+        "foot_contacts": 0.0,
+        "smooth_root_pos": 2.8610229518832853e-08,
+        "root_positions": 2.8610229518832853e-08,
+        "global_root_heading": 2.965079060057718e-08
+      }
+    },
+    {
+      "source": "g1/csv/230103/egipt_dance_R_001__A097.csv",
+      "category": "Dancing",
+      "max_abs_errors": {
+        "posed_joints": 5.9516488404298684e-08,
+        "global_rot_mats": 2.97968845153207e-08,
+        "local_rot_mats": 2.980163604782149e-08,
+        "foot_contacts": 0.0,
+        "smooth_root_pos": 2.9784607669114394e-08,
+        "root_positions": 2.8610229518832853e-08,
+        "global_root_heading": 2.9732170281349113e-08
+      }
+    },
+    {
+      "source": "g1/csv/210531/looking_in_the_mirror_amateur_001__A001.csv",
+      "category": "Object Interaction",
+      "max_abs_errors": {
+        "posed_joints": 5.955831405834999e-08,
+        "global_rot_mats": 2.9802048273630533e-08,
+        "local_rot_mats": 2.9799800960184086e-08,
+        "foot_contacts": 0.0,
+        "smooth_root_pos": 2.8610229518832853e-08,
+        "root_positions": 2.8610229518832853e-08,
+        "global_root_heading": 2.9700451209535572e-08
+      }
+    }
+  ],
+  "comparison_tolerance": 1e-05
+}

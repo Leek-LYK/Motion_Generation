@@ -1,0 +1,15 @@
+{
+  "model": {"latent_dim": 256, "ff_size": 1024, "num_layers": 4, "num_heads": 4},
+  "seed": 20261101,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "grad_clip": 1.0,
+  "ema_every": 10,
+  "ema_decay": 0.995,
+  "ema_warmup": "min(decay, (1+updates)/(10+updates))",
+  "objective": "mean of six masked normalized SmoothL1 components; no FK loss",
+  "precision": "float32",
+  "text_dropout": 0.0,
+  "heading_augmentation": false,
+  "guidance": "nocfg"
+}

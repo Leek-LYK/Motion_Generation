@@ -1,0 +1,35 @@
+{
+  "model": {
+    "latent_dim": 256,
+    "ff_size": 1024,
+    "num_layers": 4,
+    "num_heads": 4
+  },
+  "seed": 20261102,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "grad_clip": 1.0,
+  "ema_every": 10,
+  "ema_decay": 0.995,
+  "ema_warmup": "min(decay, (1+updates)/(10+updates))",
+  "objective": "mean of six masked normalized SmoothL1 components; no FK loss",
+  "precision": "float32",
+  "text_dropout": 0.0,
+  "heading_augmentation": false,
+  "guidance": "nocfg (weight 1)",
+  "network_dropout": 0.0,
+  "max_steps": 5000,
+  "minimum_steps": 2000,
+  "eval_every": 250,
+  "sample_every": 1000,
+  "log_every": 25,
+  "preview_ddim_steps": 100,
+  "early_stop_patience": 8,
+  "early_stop_relative_delta": 0.001,
+  "normalization": "frozen M2 full training statistics",
+  "stage": "A",
+  "train_samples": 256,
+  "preview_guidance": [
+    1.0
+  ]
+}
